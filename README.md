@@ -1,19 +1,15 @@
 # flash-message-redux
 
-Module defining Redux actions and reducers to to create a Redux entity that
-stores an application level message.  This is akin to a toast message or a
+Module defining Redux actions and reducers to to store an global application level message.  This is akin to a toast message or a
 flash message if you are familiar with Ruby on Rails.
-
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your
-local machine for development and testing purposes. See deployment for notes on
-how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Installing
 
-media-gallery-redux is an npm module and can be downloaded from the npm registry.
+flash-message-redux is an npm module and can be downloaded from the npm registry.
 
 Using npm:
 
