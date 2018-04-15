@@ -1,5 +1,7 @@
 # flash-message-redux
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/663d53d7a1649aa9ab99/maintainability)](https://codeclimate.com/github/mbeauv/flash-message-redux/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/663d53d7a1649aa9ab99/test_coverage)](https://codeclimate.com/github/mbeauv/flash-message-redux/test_coverage)
+
 Library defining Redux actions and a reducer to to store a global application level message.  This is akin to a toast message or a
 flash message if you are familiar with Ruby on Rails.
 
