@@ -1,11 +1,11 @@
 # flash-message-redux
 
-Module defining Redux actions and reducers to to store an global application level message.  This is akin to a toast message or a
+Library defining Redux actions and a reducer to to store a global application level message.  This is akin to a toast message or a
 flash message if you are familiar with Ruby on Rails.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Installing
 
@@ -22,6 +22,27 @@ Using yarn:
 ```
 yarn add flash-message-redux
 ```
+### Using it
+
+Using the flash-message-redux library is fairly easy.  You first need to add the reducer to your combineReducers call.  Something like:
+
+```
+import { flashMessageReducer as flashMessage } from 'flash-message-redux';
+const rootReducer = combineReducers({
+  flashMessage,
+});
+```
+
+Next you simple need to use one of the four actions defined:
+
+- flashInfo
+- flashWarning
+- flashError
+- clearFlash
+
+Each one will create a flash message with the associated level.
+
+Now the question is where do you use these methods.  The methods provided through the module do not prevent you using flash-messages at any level of your application.  You could use it in the actions, the reducers or the react components.  I would advise you to use it in the React components only. Flash messages are a UI construct and it wouldn't make much sense to put them in the action for example... though it might be tempting to do this as you have contextual information there too.
 
 ### And coding style tests
 
